@@ -1,0 +1,15 @@
+#!/anaconda/bin/python
+
+import numpy as np
+import matplotlib.pyplot as plt
+
+arr=np.zeros((9,9))
+arr[:,0:3]=1
+arr[8,:]=1
+x=[4,7,1]
+y=[5,7,8]
+arr[x,y]=1
+plt.spy(arr)
+plt.show()
+
+
